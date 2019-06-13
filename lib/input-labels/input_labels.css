@@ -1,0 +1,21 @@
+.form-box, .form-box-edit{
+	position: relative;
+	margin: 0 15px 15px 0;
+	float: left;
+}
+.form-box span, .form-box-edit span{
+	position: absolute;
+	left: 30px;
+	font-size: 15px;
+	top: 7px;
+	font-weight: normal;
+}
+.form-box input + span:hover, .form-box input:hover + span, .form-box input:active + span, .form-box input:focus + span, .activeLabel, .form-box-edit span{
+	transition: all ease-in-out 300ms;
+	left: 20px !important;
+	top: 0 !important;
+	font-size: 12px !important;
+}
+.form-box input, .form-box-edit input{
+	text-align: center;
+}

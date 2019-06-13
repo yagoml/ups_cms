@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<div class="row">
+	<nav>
+		<div id="menu" class="menu">
+			<div class="menu-header">UpSide CMS 1.0.0 Beta</div>
+				<ul>
+					<li class="active"><a href="<%= baseUrl %>"><i class="fa fa-home"></i> Site</a></li>
+
+					<li><a class="menu-parent"><i class="glyphicon glyphicon-cloud"></i> Dados <span class='submenu-indicator'>+</span></a>
+						<ul id='dadosSubMenu' class="submenu">
+							<% _.each(tables, (linkDado) => { 
+								if(typeof linkDado.unique == 'undefined') { %>
+									<li><a ref="<%= linkDado.table %>" class="link-menu<% if(typeof openedData != 'undefined' && openedData == linkDado.table) { print(' selected-menu') } %>"><%= linkDado.name %></a></li>
+							<%  }
+							}); %>
+						</ul>
+					</li>
+
+					<li><a href="#admin/autoCrud/config_site/edit/1"><i class="fa fa-cog"></i> Configurações</a>
+
+					<!-- <li><a href="#"><i class="fa fa-cog"> </i>Services</a>
+						<ul class="submenu">
+						<li><a href="#"> Web Design </a>
+							<ul class="submenu">
+							<li><a href="#"> WordPress</a></li>
+							<li><a href="#"> Joomla</a></li>
+							</ul>
+						</li>
+						<li><a href="#"> Hosting</a></li>
+						</ul>
+					</li> -->
+				</ul>
+			<div class="menu-footer">UpSide Software ® All rights reserved</div>
+		</div>
+	</nav>
+</div>

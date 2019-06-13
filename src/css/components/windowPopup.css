@@ -1,0 +1,67 @@
+.windowPopup {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  justify-content: center;
+  /* horizontal center */
+  align-items: center;
+  /* vertical center */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  top: 0;
+  left: 0;
+}
+.windowPopup #windowContainer {
+  background: #eee;
+  padding: 15px;
+  height: auto;
+  border: 1px solid #888;
+  vertical-align: middle;
+  width: fit-content;
+  text-align: center;
+  position: relative;
+  /* The Close Button */
+}
+.windowPopup #windowContainer #windowTitle {
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.windowPopup #windowContainer .closeWindow {
+  color: rgba(119, 119, 119, 0.7);
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+}
+.windowPopup #windowContainer .closeWindow:hover,
+.windowPopup #windowContainer .closeWindow:focus {
+  color: #a94442;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+}
+.windowPopup #windowContainer #windowButtons {
+  text-align: right;
+}
+.windowPopup #windowContainer #windowButtons button {
+  margin: 0 5px;
+}
+.windowPopup #windowContainer #windowButtons button:nth-last-child(1) {
+  margin-right: 0;
+}

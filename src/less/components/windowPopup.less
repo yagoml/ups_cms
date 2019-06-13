@@ -1,0 +1,63 @@
+.windowPopup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    top: 0;
+    left: 0;
+
+    #windowContainer {
+        background: #eee;
+        padding: 15px;
+        height: auto;
+        border: 1px solid #888;
+        vertical-align: middle;
+        width: fit-content;
+        text-align: center;
+        position: relative;
+
+        #windowTitle {
+            font-size: 17px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* The Close Button */
+        .closeWindow {
+            color: rgba(119, 119, 119, .7);
+            float: right;
+            font-size: 15px;
+            font-weight: bold;
+            opacity: 1;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            cursor: pointer;
+
+            &:hover, &:focus {
+                color: rgba(169, 68, 66, 1);
+                text-decoration: none;
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+
+        #windowButtons {
+            text-align: right;
+
+            button {
+                margin: 0 5px;
+                
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

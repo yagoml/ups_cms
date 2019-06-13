@@ -1,0 +1,94 @@
+// Header
+#buttonsArea {
+	#removerFiltro {
+		color: red;
+		cursor: pointer;
+	}
+
+	#newData, #deleteData, #deleteDataEdit {
+		display: none;
+	}
+
+	.glyphicon-share-alt {
+		transform: rotate(-180deg);
+	}
+}
+// Table GRID
+#dataTableContent {
+	width: ~"calc(100% + 15px)";
+
+	.dadosTable {
+		text-align: center;
+
+		th {
+			text-align: center;
+		}	
+
+		tbody {
+			tr {
+				cursor: pointer;
+				i {
+					cursor: pointer;
+				}
+				.dado-wrapper {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					min-height: 25px;
+					padding-top: 3px;
+
+					p {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.table-responsive {
+		overflow: auto;
+		max-height: 80vh;
+	}
+
+	.auto-crud-edit-data {
+		.form-box-edit {
+			display: inline-table;
+			margin-bottom: 15px;
+
+			textarea {
+				resize: vertical;
+			}
+		}
+	}
+
+	.qq-upload-list {
+		li {
+			cursor: move;
+			position: relative;
+		}
+		.file-order {
+			position: absolute;
+			top: 10px;
+			left: 100px;
+		}
+
+		.qq-thumbnail-selector {
+			cursor: pointer;
+		}
+	}
+}
+// Edit Data
+.auto-crud-form-edit {
+	margin-bottom: 15px;
+
+	.edit-data-form {
+		textarea {
+			text-align: justify;
+		}
+
+		#saveData {
+			position: relative;
+		}
+	}
+}

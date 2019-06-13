@@ -1,0 +1,103 @@
+.full-width {
+  width: 100%;
+}
+.marg5 {
+  margin: 5px;
+}
+.margH5 {
+  margin: 0 5px;
+}
+.margH10 {
+  margin: 0 10px;
+}
+.margV15 {
+  margin: 15px 0;
+}
+.margT15 {
+  margin-top: 15px;
+}
+.margT20 {
+  margin-top: 20px;
+}
+.margT50 {
+  margin-top: 50px;
+}
+.margB10 {
+  margin-bottom: 10px;
+}
+.margB15 {
+  margin-bottom: 15px;
+}
+.margB20 {
+  margin-bottom: 20px;
+}
+.margB30 {
+  margin-bottom: 30px;
+}
+.margL5 {
+  margin-left: 5px;
+}
+.margL15 {
+  margin-left: 10px;
+}
+.margL10 {
+  margin-left: 15px;
+}
+.pad0 {
+  padding: 0;
+}
+.pad2 {
+  padding: 2px;
+}
+.pad0-5 {
+  padding: 0 5px;
+}
+.pad2-5 {
+  padding: 2px 5px;
+}
+.padL0sm {
+  padding-left: 0;
+}
+.padR0sm {
+  padding-right: 0;
+}
+.padR0 {
+  padding-right: 0;
+}
+.padL0 {
+  padding-left: 0;
+}
+.pad5 {
+  padding: 5px;
+}
+.pad2 {
+  padding: 2px;
+}
+.pad2x5 {
+  padding: 2px 5px;
+}
+.font10 {
+  font-size: 10px;
+}
+.font15 {
+  font-size: 15px;
+}
+.font20 {
+  font-size: 20px;
+}
+.fitContent {
+  display: flex;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  .padL0sm {
+    padding-left: 15px;
+  }
+  .padR0sm {
+    padding-right: 15px;
+  }
+  .text-center-xs {
+    text-align: center !important;
+  }
+}

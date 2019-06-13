@@ -1,0 +1,19 @@
+<div class="col-md-offset-1 col-md-8 col-sm-10 col-xs-12 padL0 auto-crud-form-edit">
+	<h4 class="text-center">Editar Registro #<%= model.get(pk) %></h4>
+	<form
+		class="edit-data-form"
+		style="width: 100%;"
+		id="editDataForm"
+	>
+		<div class="form-body"></div>
+		<div class="text-right">
+			<button class="btn btn-default" id="backGrid"><i class="glyphicon glyphicon-search"></i> Voltar</button>
+			<button class="btn btn-primary" type="submit" id="saveData"><i class="glyphicon glyphicon-search"></i> Salvar</button>
+		</div>
+	</form>
+</div>
+
+<div class="col-sm-3 col-xs-12">
+	<h4>Dados Relacionados</h4>
+	<div id="relatedData"></div>
+</div>
